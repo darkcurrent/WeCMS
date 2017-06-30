@@ -31,5 +31,12 @@ You need to also change the dashes of the following part of code to your ThingSp
 ```
 String GET = "GET /update?api_key=----------------";
 ```
-## Upload!
-Now you are ready to upload the code to your Arduino! Enjoy your all-new personal internet connected Arduino weather station. 
+### Upload!
+Now you are ready to upload the code to your Arduino! Enjoy your all-new personal ThingSpeak connected Arduino weather station. 
+
+## Data Handling and Plotting
+
+The WeCMS collects the values of the sensors and sents them to ThingSpeak. From there you can view the data as graphs but these graphs are not customizable and most importantly they demand a powerful computer. So I came up with a python program that downloads the data from ThingSpeak, re-plots them and saves them as .jpg images. These graphs are more customizable and since they are just a .jpg the do not demand a powerful computer to be viewed, but there is a catch. You can only see the new graphs from your computer. You need to host these graphs somewhere. I have chosen to do that with Dropbox. It is free and it will do the job just fine. To do that, you will need to copy the graphs made in the WeCMS_plotter folder and __paste them as shortcuts__ to Dropbox. Then you need to create a public link for eatch graph (or set of graphs). Now you need to make a website for your project. I have created 2 websites. [One from scratch]() and [one with Weebly's templates](http://wecmsplotter.weebly.com/) 
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
