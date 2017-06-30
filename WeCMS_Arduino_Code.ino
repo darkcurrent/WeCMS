@@ -15,10 +15,10 @@ Adafruit_ADS1115 ads;
 
 SoftwareSerial esp8266Module(10, 11);
 
-String network = "Forthnet-4rhs3";
-String password = "DSPfGdcg";
+String network = "--------";
+String password = "--------";
 #define IP "184.106.153.149"
-String GET = "GET /update?api_key=BW7SHPGTJ6ES0OTB";
+String GET = "GET /update?api_key=----------------";
 
 void setup()
 {
