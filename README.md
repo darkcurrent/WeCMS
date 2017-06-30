@@ -9,7 +9,7 @@ WeCMS stands for Weather and Climate Monitoring Station. It is a homemade IoT we
 - 1x ADS1115
 - 1x ESP8266
 ### Circuit
-Before you start doing anything with the software you need to make the Circuit. I have not published the circuit but it is pretty straight forward. Both the __HDC1080__, the __BMP180__ and __ADS1115__ (and the IR sensor as it is connected to the ADC) use the __I2C__ communication protocol. That means that they need only 4 wires: __VCC__,__GND__,__SDA__ and __SCL__ but the __ADS1115__ needs another wire from __ADDR__ to __GND__. Finally you need to connect the __ESP8266__ the usual way to pins 10 and 11 but I will not describe it here.
+Before you start doing anything with the software you need to make the circuit. I have not published yet the circuit but it is pretty straight forward. Both the __HDC1080__, the __BMP180__ and __ADS1115__ (the IR sensor as it is connected to the ADC) use the __I2C__ communication protocol. That means that they need only 4 wires: __VCC__,__GND__,__SDA__ and __SCL__ but the __ADS1115__ needs another connection from __ADDR__ to __GND__. Finally you need to connect the __ESP8266__ the usual way to pins 10 and 11 but I will not describe it here.
 ## Software
 ### Libraries
 The code I developed uses the following 5 libraries:
