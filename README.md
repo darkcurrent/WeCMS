@@ -31,5 +31,5 @@ You need to also change the dashes of the following part of code to your ThingSp
 ```
 String GET = "GET /update?api_key=----------------";
 ```
-### Upload!
+## Upload!
 Now you are ready to upload the code to your Arduino! Enjoy your all-new personal internet connected Arduino weather station. 
