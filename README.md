@@ -22,4 +22,14 @@ SoftwareSerial
 ```
 If any of these libraries is missing the code will not compile.
 ### Things to do before uploading the code
-Before uploading the code to the Arduino you will need to change some parts of it.
+Before uploading the code to the Arduino you will need to change some parts of it. You need to change the dashes of the following part of code to your wifi network name and password.
+```
+String network = "--------";
+String password = "--------";
+```
+You need to also change the dashes of the following part of code to your ThingSpeak API key.
+```
+String GET = "GET /update?api_key=----------------";
+```
+### Upload!
+Now you are ready to upload the code to your Arduino! Enjoy your all-new personal internet connected Arduino weather station. 
