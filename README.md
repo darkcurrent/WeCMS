@@ -22,21 +22,21 @@ SoftwareSerial
 ```
 If any of these libraries is missing, the code will not compile.
 ### Things to do before uploading the code
-Before uploading the code to the Arduino you will need to change some parts of it. You need to change the dashes of the following part of code to your wifi network name and password.
+Before uploading the code to the Arduino you will need to change some parts of it. You need to replace the dashes of the following part of code to your wifi network name and password.
 ```
 String network = "--------";
 String password = "--------";
 ```
-You need to also change the dashes of the following part of code to your ThingSpeak API key.
+You need to also replace the dashes of the following part of code to your ThingSpeak API key.
 ```
 String GET = "GET /update?api_key=----------------";
 ```
 ### Upload!
-Now you are ready to upload the code to your Arduino! Enjoy your all-new personal ThingSpeak-connected Arduino weather station. 
+Now you are ready to upload the code to your Arduino! The weather station will work but there are still some improvements you can do.
 
 ## Data Handling and Plotting
 
-The WeCMS collects the values of the sensors and sends them to ThingSpeak. From there you can view the data as graphs but these graphs are not customizable and most importantly, they require a powerful computer to be viewed properly. So I came up with a python program that downloads the data from ThingSpeak, re-plots them and saves them as .jpg images. These graphs are more customizable and since they are just a .jpg, they do not require a powerful computer to be viewed, but there is a problem. You can only see the new graphs in your computer. Thus, you need to host these graphs somewhere. I have chosen to do that with Dropbox. It is free and it will do the job just fine. To do that, you will need to copy the graphs made in the WeCMS_plotter folder and __paste them as shortcuts__ to Dropbox. Then you need to create a public link for each graph (or set of graphs). Now you need to make a website for your project. I have created 2 websites. [One from scratch]() and [one with Weebly's templates](http://wecmsplotter.weebly.com/) 
+The WeCMS collects the values of the sensors and sends them to ThingSpeak. From there you can view the data as graphs but these graphs are not customizable and most importantly, they require a powerful computer to be viewed properly. So I came up with a python program that downloads the data from ThingSpeak, re-plots them and saves them as .jpg images. These graphs are more customizable and since they are just a .jpg, they do not require a powerful computer to be viewed, but there is a problem. You can only see the new graphs in your computer. Thus, you need to host these graphs somewhere. I have chosen to do that with Dropbox. It is free and it will do the job just fine. To do that, you will need to copy the graphs made in the WeCMS_plotter folder and __paste them as shortcuts__ to Dropbox. Then you need to create a public link for each graph (or set of graphs). Now you need to make a website for your project. I have created 2 websites. [One from scratch](website/index.html) and [one with Weebly's templates](http://wecmsplotter.weebly.com/) 
 ## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details
